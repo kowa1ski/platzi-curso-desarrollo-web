@@ -1,3 +1,25 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
 header {
-  background: pink !important;
+  background: pink;
+  color: red // no dejamos , ; , porque es el último
 }
+
+/* selector de eqtiqueta header - section - article - nav */
+/* selector descendente */
+
+/* body header div nav ol li a , hemos llegado a la a desde su descendencia*/
+
+/* selector de clase  . */
+
+/* .link */
+
+/* Los class los puedes multiplicar mientras
+que los id sólo pueden ir una vez porque a partir
+de la primera ignora los siguientes. */
+
+/* un selector de id es con el símbolo # */
