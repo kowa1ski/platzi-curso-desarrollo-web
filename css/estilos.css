@@ -35,4 +35,14 @@ h4,
 h5,
 h6 {
   font-family: 'Fjalla One', sans-serif;
+  font-weight: normal; /* de 100 a 900 de la más fina a la más gruesa. , bold , es 600 */
+  /* font-style: italic; Si la ponemos el navegador la simula aunque no la tenga */
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5; /* El 1em(ó 1) es el alto(100%) de la fuente. */
+  letter-spacing: -.2px; /* espaciado entre letras */
+  text-transform: uppercase;
+  /* text-decoration: underline; Esto pondría una línea subrayada */
 }
