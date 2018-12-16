@@ -46,3 +46,15 @@ h1 {
   text-transform: uppercase;
   /* text-decoration: underline; Esto pondría una línea subrayada */
 }
+
+.hero {
+  height: 300px;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-imageContainer {
+  width: 500px;
+}
