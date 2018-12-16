@@ -4,10 +4,10 @@ declaraciones
 propiedades
 valores */
 
-header {
+/* header {
   background: pink;
   color: red // no dejamos , ; , porque es el último
-}
+} */
 
 /* selector de eqtiqueta header - section - article - nav */
 /* selector descendente */
@@ -23,3 +23,11 @@ que los id sólo pueden ir una vez porque a partir
 de la primera ignora los siguientes. */
 
 /* un selector de id es con el símbolo # */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
