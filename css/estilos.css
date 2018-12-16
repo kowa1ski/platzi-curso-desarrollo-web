@@ -71,6 +71,31 @@ h1 strong {
   background-position-x: right;
 }
 
+.project {
+  /* border: tamaño, tipo, estilo(rallitas, fijo punteado) */
+  /* border-top: 10px solid red;
+  border-right: 10px solid green;
+  border-left: 10px solid orange;
+  border-bottom: 10px solid pink; */
+
+  /* border-color: red;  Sólo No valdría porque no tiene ancho*/
+  /* Se necesitan las tres propiedades */
+
+  /* Como  Excepción se puede quitar el color, prescindir de él
+  y entonces se verá negro porque coge el color de la fuente. */
+
+
+  /* border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  Esto se resume en la siguiente línea */
+  border: 1px solid grey;
+
+  /* Esta propiedad suaviza las esquinas */
+  border-radius: 10px;
+
+}
+
 .project-details {
   width: 500px;
 }
