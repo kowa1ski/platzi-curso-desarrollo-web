@@ -24,6 +24,12 @@ de la primera ignora los siguientes. */
 
 /* un selector de id es con el símbolo # */
 
+/* gris oscuro = #1d252c:
+gris claro = #626262;
+background gris = #1b2127;
+celeste =  #026fff;
+*/
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -45,10 +51,24 @@ h1 {
   letter-spacing: -.2px; /* espaciado entre letras */
   text-transform: uppercase;
   /* text-decoration: underline; Esto pondría una línea subrayada */
+  color: white;
+}
+
+h1 strong {
+  color: #026fff;
 }
 
 .hero {
   height: 300px;
+  /* Metemos una imagen de Fondo */
+  background-image: url('../images/hero.jpg');
+  background-color: #1b2127;
+  /* este será el tamaño de la foto */
+  background-size: 500px 300px;
+    /* no queremos que se repita la imagen en mosaico */
+  background-repeat: no-repeat;
+    /* Movemos la imagen en el eje x */
+  background-position-x: right;
 }
 
 .project-details {
@@ -57,4 +77,14 @@ h1 {
 
 .project-imageContainer {
   width: 500px;
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+}
+
+.header a {
+  color: white;
+  text-decoration: none; /*Les quitamos también los subrayados*/
 }
