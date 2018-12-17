@@ -52,6 +52,11 @@ h1 {
   text-transform: uppercase;
   /* text-decoration: underline; Esto pondría una línea subrayada */
   color: white;
+
+  /* margin: top right bottom left */
+  /* margin: top-right bottom-left ej 100px 50px sólo dos valores*/
+
+  margin: 100px 50px 70px 30px;
 }
 
 h1 strong {
