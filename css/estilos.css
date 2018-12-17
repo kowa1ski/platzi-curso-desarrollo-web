@@ -135,3 +135,24 @@ h1 strong {
 }
 
 /* En esta clase ha sido todo desarrollado en el navegdor (Inspector) */
+
+.flexbox {
+  display: flex;
+  /* flex-direction: row; es la asignación por defecto */
+  /* flex-wrap: nowrap; es la propiedad por defecto para alineción */
+  flex-wrap: wrap;
+
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  margin: 20px;
+  /* propiedad de los hijos para padres con , flex ,
+  que es su capacidad de encogimiento de 0 a 1. */
+  /* flex-shrink: 0; */
+
+
+
+}
