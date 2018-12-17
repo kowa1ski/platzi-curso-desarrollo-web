@@ -142,13 +142,18 @@ h1 strong {
   /* flex-wrap: nowrap; es la propiedad por defecto para alineción */
   flex-wrap: wrap;
 
+  /* Los hijos de flex suman sus márgenes entre ellos. */
+
+  /* justify-content: flex-start; es el valor por defecto */
+  
+
 }
 
 .box {
-  width: 200px;
-  height: 200px;
+  width: 50px;
+  height: 50px;
   border: 1px solid red;
-  margin: 20px;
+  margin: 5px;
   /* propiedad de los hijos para padres con , flex ,
   que es su capacidad de encogimiento de 0 a 1. */
   /* flex-shrink: 0; */
