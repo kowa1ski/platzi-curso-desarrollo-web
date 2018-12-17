@@ -145,8 +145,16 @@ h1 strong {
   /* Los hijos de flex suman sus márgenes entre ellos. */
 
   /* justify-content: flex-start; es el valor por defecto */
-  
 
+  /* align-items: flex-start; es el valor por defecto */
+  /* Y sirve para que estén pegaditos a la parte de arriba. */
+  /* align-items: center; coloca nuestra fila horizontal centrada verticalmente. */
+
+  /* lo siguiente para alinear en columna a los items */
+  flex-direction: column;
+  /* Y si tiene algún centrado el mismo se invierte con esto de , colum ,. */
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
