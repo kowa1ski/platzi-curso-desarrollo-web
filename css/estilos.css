@@ -58,12 +58,11 @@ h1 {
   /* margin: top right bottom left */
   /* margin: top-right bottom-left ej 100px 50px sólo dos valores*/
 
-  margin: 100px 50px 70px 30px;
+  /* margin: 100px 50px 70px 30px; */
+  margin: 0;
 }
 
-h1 strong {
-  color: #026fff;
-}
+h1 strong { color: #026fff; }
 
 .hero {
   height: 300px;
@@ -76,6 +75,9 @@ h1 strong {
   background-repeat: no-repeat;
     /* Movemos la imagen en el eje x */
   background-position-x: right;
+
+  display: flex;
+  align-items: center;
 }
 
 .portfolio {
@@ -129,8 +131,8 @@ h1 strong {
   color: white;
   display: flex;
   justify-content: space-between;
-
-  height: 90px;
+  align-items: center;
+  height: 70px;
 
 }
 
@@ -219,4 +221,20 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
 /* Terminada otra lección sin variar código, todo escrito en el inspector del navegador */
 
 
+}
+
+.footer {
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
 }
