@@ -64,6 +64,15 @@ h1 {
 
 h1 strong { color: #026fff; }
 
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
 .hero {
   height: 300px;
   /* Metemos una imagen de Fondo */
@@ -82,6 +91,7 @@ h1 strong { color: #026fff; }
 
 .portfolio {
   background: #fafafa;
+  padding: 20px;
 }
 
 
@@ -109,13 +119,34 @@ h1 strong { color: #026fff; }
   border-radius: 10px;
 
   /* de la siguiente manera se marca el margen total y luego discrimina solo uno */
-  margin: 10px;
+  /* margin: 10px; le quitamos este margen para que se alinee con el elemento justo arriba */
   margin-bottom: 15;
 
   padding: 20px;
 
   background: white;
+  display: flex;
 
+}
+
+/* .projetct-course {
+  margin: 10px 0;
+}
+
+.project-date {
+  margin: 10 0;
+}
+
+Se resume en la siguiente línea */
+.project-course,
+.project-date {
+  margin: 10 0;
+}
+
+.project-tittle {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .project-details {
