@@ -293,7 +293,8 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
 }
 
 .event {
-  border: 1px solid red;
+  /* quitamos el borde que usamos para depurar
+  border: 1px solid red; */
   margin: 10px;
   width: 480px;
 
@@ -372,6 +373,7 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .social {
@@ -389,6 +391,8 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
   /* Este borde lo usamos para depurar, ahora se comenta y ya
   border: 1px solid white; */
   background-size: 50px 50px;
+
+  margin: 0 10px;
 }
 
 /* Si queremos estilos para un elemento que esté etiquetado con dos
@@ -414,4 +418,37 @@ localizar el elemento */
 
 .social-link.instagram {
   background-image: url(../images/instagram.svg);
+}
+
+.form-email input{
+  border-color: gray;
+  padding: 10px 20px 10px 25px;
+  background-image: url(../images/envelope.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+
+  /* Ojo con los siguientes que son muy interesantes y no me aparecen
+  en el lister de Atom. Si no me los dicen no los veo. */
+  background-position-y: center;
+  background-position-x: 5px;
+
+  border-style: solid;
+}
+
+
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  padding: 10px 0;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  margin: 10 auto;
+  margin-top: 10px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
