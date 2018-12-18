@@ -159,6 +159,7 @@ projetc strong {
   font-size: 30px;
   margin-top: 0;
   margin-bottom: 10px;
+
 }
 
 .project-details {
@@ -280,4 +281,84 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
 
 .footer a {
   color: white;
+}
+
+.event-list {
+  display: flex;
+
+}
+
+.event-list-tittle{
+  margin-left: 20px;
+}
+
+.event {
+  border: 1px solid red;
+  margin: 10px;
+  width: 480px;
+
+  border-radius: 10px;
+
+  /* esta propiedad hace que se oculte el elemento que sobresale.
+  Si no lo pusiéramos, como el borde es redondeado, habría un pico
+  de la imagen sobresaliendo.*/
+  overflow:  hidden;
+
+  /* despues de la anterior , overflow , es obligado esta para
+  que se respeten las dimensiones de la imagen*/
+  flex-shrink: 0;
+
+  background: #f4fbff;
+
+
+}
+
+/* Ahora le vamos a cambiar el ancho a todas las imágenes de , event ,. */
+.event img {
+  width: 480px;
+  height: 200px;
+
+  /* esta propiedad cambia la relación de aspecto de las imágenes */
+  object-fit: cover;
+
+}
+
+.event-detail {
+  margin: 20px 40px;
+
+  /* Atentos a esta acción del Margen Negativo
+  .
+   En este caso sobreescribe al justo anterior sólo en
+  la parte de arriba */
+  margin-top: -40px;
+
+  background-color: white;
+
+  padding: 20px;
+
+  /* Esta propiedad , position , también es superinteresante .
+  En este caso nos sirve para superponer este elemento(junto con su
+  color de fondo y todo eso) encima
+  de la imagen en caso de que se junten. */
+  position: relative;
+
+  /* Nota Importante:
+  No utilizar nunca , text-align: justify; */
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-description-url {
+  /* border: 1px solid #056fff; El color del borde se asimila Desde
+  el color de la fuente */
+  border: 1px solid;
+
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #056fff;
+
+  border-radius: 5px;
 }
