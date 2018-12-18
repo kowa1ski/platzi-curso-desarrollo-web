@@ -127,11 +127,61 @@ h1 strong {
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  justify-content: space-between;
+
+  height: 90px;
+
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* list-style: none; // es para que no salgan los numeritos o bolitas */
+  height: inherit;
+}
+
+figure {
+  margin: 0;
 }
 
 .header a {
   color: white;
   text-decoration: none; /*Les quitamos también los subrayados*/
+}
+
+/* Atentos a estos cambios que sirven para construir los botones
+del menu, los items del menú para que se puedan clicar en todo el
+alto de la cajita y no sólo en el ancla. Vamos allá */
+
+.menu {
+  /* , inherit , significa heredado.
+  y sólo funciona padre-hijo, no p.ej. abuelo-nieto
+  entonces el padre hereda y entonces sí está dispuesto
+  a que su hijo herede, es un paso intermedio que hay que hacer
+  abuelo-heredaPadre-heredaNieto entonces Sí funciona */
+  height: inherit;
+}
+
+.header ul {
+  display: flex;
+  height: inherit;
+  /* align-items: center; esto aquí no funcionaría para centrar los , a , */
+
+}
+
+.header ul li {
+
+  height: inherit;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
 }
 
 /* En esta clase ha sido todo desarrollado en el navegdor (Inspector) */
