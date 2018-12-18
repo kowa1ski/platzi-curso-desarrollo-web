@@ -362,3 +362,56 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
 
   border-radius: 5px;
 }
+
+.contact {
+  background-color: #056fff;
+  color: white;
+
+  /* le damos un alto para que todos los elementos se alieen dentro */
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  /* Este borde lo usamos para depurar, ahora se comenta y ya
+  border: 1px solid red;*/
+}
+
+.social-link {
+  /* vamos a darle un display para que puedan agarrar el tamaño del ancho */
+  /* Se podría hacer también con flex */
+  display: inline-block;
+
+  width: 50px;
+  height: 50px;
+  /* Este borde lo usamos para depurar, ahora se comenta y ya
+  border: 1px solid white; */
+  background-size: 50px 50px;
+}
+
+/* Si queremos estilos para un elemento que esté etiquetado con dos
+clases al mismo tiempo se puede hacer de la siguiente manera para
+localizar el elemento */
+.social-link.twitter {
+  background-image: url(../images/twitter.svg);
+  /* El caso de , .svg , es especial. Es una imagen escalable
+  así que no se va a ver si no se le asigna un tamaño */
+
+  /* inicialmente era así pero lo hemos comentado porque lo hemos declarado
+  para todos los links en el padre de arriba
+  background-size: 50px 50px; */
+}
+
+.social-link.facebook {
+  background-image: url(../images/facebook.svg);
+}
+
+.social-link.github {
+  background-image: url(../images/github.svg);
+}
+
+.social-link.instagram {
+  background-image: url(../images/instagram.svg);
+}
