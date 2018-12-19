@@ -76,17 +76,23 @@ h2 {
 .hero {
   height: 300px;
   /* Metemos una imagen de Fondo */
-  background-image: url('../images/hero.jpg');
+  /* background-image: url('../images/hero.jpg'); */
   background-color: #1b2127;
   /* este será el tamaño de la foto */
-  background-size: 500px 300px;
+  /* background-size: 500px 300px; */
     /* no queremos que se repita la imagen en mosaico */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
     /* Movemos la imagen en el eje x */
-  background-position-x: right;
-
+  /* background-position-x: right; */
   display: flex;
   align-items: center;
+
+  justify-content: space-between;
+}
+
+.hero-image {
+  /* así conserva la imagen su relación de aspecto */
+  object-fit: cover;
 }
 
 .portfolio {
@@ -285,6 +291,7 @@ alto de la cajita y no sólo en el ancla. Vamos allá */
 
 .event-list {
   display: flex;
+  flex-wrap: wrap;
 
 }
 
@@ -451,4 +458,20 @@ localizar el elemento */
 .form-email h3 {
   font-family: 'Source Sans Pro', sans-serif;
 
+}
+
+.container {
+  border: 1px solid red;
+  width: 1000px;
+
+  /* lo siguiente centra el elemento */
+  margin: 0 auto;
+
+  /* vamos a hacer que herede del padre */
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+
+  flex-wrap: inherit;
 }
